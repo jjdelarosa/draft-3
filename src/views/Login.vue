@@ -22,8 +22,12 @@ export default {
   mounted() {
     const uiConfig = {
       callbacks: {
-        signInSuccessWithAuthResult: authResult => {
-          this.$store.dispatch('setUser', authResult.user)
+        signInSuccessWithAuthResult: async () => {
+          const idToken = await this.$firebase.auth().currentUser.getIdToken()
+          this.$store.dispatch('setIdToken', idToken)
+          this.$axios.defaults.headers.common['Authorization'] = `Bearer ${idToken}`
+          const { data } = await this.$axios('login')
+          this.$store.dispatch('setUser', data)
           this.$router.push('/')
           return false
         },
