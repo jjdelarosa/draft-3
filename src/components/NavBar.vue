@@ -27,9 +27,9 @@
           </v-btn>
           <v-btn class="red mr-2" @click="$router.push('/messages')">
             <span class="mr-2">Messages</span>
-           </v-btn>
+          </v-btn>
           <v-btn class="red mr-2" @click="$router.push('/newsfeed')">
-          <span class="mr-2">News Feed</span>
+            <span class="mr-2">News Feed</span>
           </v-btn>
         </template>
 
@@ -64,7 +64,7 @@ export default {
       this.$firebase.auth().signOut()
       this.setUser('')
       this.setIdToken('')
-      this.$router.push('/login')
+      this.$router.push('/')
     },
     ...mapActions(['setUser', 'setIdToken', 'showDialog']),
   },

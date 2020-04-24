@@ -1,7 +1,7 @@
 <template>
-    <v-app class="red text-center fill-height">
-        <h1>A Coder</h1>
-           <h4>
+  <v-app class="red text-center fill-height">
+    <h1>A Coder</h1>
+    <h4>
       A social network a place where you can share code and talk to one another and work together in projects and homework activites. As a community of coders, I feel we will connect them to solution that enable productivity, growth, and
       discovery to your code.
     </h4>
@@ -29,7 +29,7 @@
             </v-list-item-content>
           </v-list>
         </v-container>
-           <v-container>
+        <v-container>
           <v-list class="mx-auto">
             <v-list-item-content>
               <v-list-item-title> ...And More </v-list-item-title>
@@ -38,5 +38,5 @@
         </v-container>
       </v-card-title>
     </v-card>
-    </v-app>
+  </v-app>
 </template>

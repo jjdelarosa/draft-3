@@ -1,9 +1,10 @@
 <template>
   <div id="firebaseui-auth-container" class="mt-8">
-          <v-footer absolute class="font-weight-medium">
-      <v-col class="text-center" cols="12"> {{ new Date().getFullYear() }} — <strong>John De La Rosa</strong> 
+    <v-footer absolute class="font-weight-medium">
+      <v-col class="text-center" cols="12">
+        {{ new Date().getFullYear() }} — <strong>John De La Rosa</strong>
         <a class="facebook" href="https://www.facebook.com/john.delarosa.902266/" target="_blank"><Facebook /></a>
-      <a class="twitter" href="https://twitter.com/thebomb520" target="_blank"><Twitter /></a>
+        <a class="twitter" href="https://twitter.com/thebomb520" target="_blank"><Twitter /></a>
       </v-col>
     </v-footer>
   </div>
@@ -16,7 +17,7 @@ import Twitter from 'vue-material-design-icons/Twitter'
 export default {
   name: 'Login',
   components: {
-      Facebook,
+    Facebook,
     Twitter,
   },
   mounted() {

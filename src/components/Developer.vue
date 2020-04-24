@@ -1,10 +1,9 @@
 <template>
-    <v-app class="purple text-center fill-height">
-        <h1>A Student</h1>
-           <h4>
-A developer is an individual who is responsible for creating or working on the development of a product or service. 
-Most developers utilize one or more programming languages to develop their product or service. 
-They may work alone or on a team, and may develop part of or all a product or service.
+  <v-app class="purple text-center fill-height">
+    <h1>A Student</h1>
+    <h4>
+      A developer is an individual who is responsible for creating or working on the development of a product or service. Most developers utilize one or more programming languages to develop their product or service. They may work alone or
+      on a team, and may develop part of or all a product or service.
     </h4>
     <v-card class="mx-auto mt-4" shaped max-width="300">
       <v-card-title
@@ -32,5 +31,5 @@ They may work alone or on a team, and may develop part of or all a product or se
         </v-container>
       </v-card-title>
     </v-card>
-    </v-app>
+  </v-app>
 </template>

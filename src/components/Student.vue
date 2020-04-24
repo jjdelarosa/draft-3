@@ -1,10 +1,9 @@
 <template>
-    <v-app class="green text-center fill-height">
-        <h1>A Student</h1>
-           <h4>
- A person who is willing to learn how to code and use different languages. 
- This person will come here and ask questions. When he/she has a question about their homework or projects. 
- This will help the studnet more in their coding skills as they learn with other students and grow with thier coding skills.
+  <v-app class="green text-center fill-height">
+    <h1>A Student</h1>
+    <h4>
+      A person who is willing to learn how to code and use different languages. This person will come here and ask questions. When he/she has a question about their homework or projects. This will help the studnet more in their coding
+      skills as they learn with other students and grow with thier coding skills.
     </h4>
     <v-card class="mx-auto mt-4" shaped max-width="300">
       <v-card-title
@@ -32,5 +31,5 @@
         </v-container>
       </v-card-title>
     </v-card>
-    </v-app>
+  </v-app>
 </template>
