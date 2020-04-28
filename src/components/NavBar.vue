@@ -16,7 +16,7 @@
       <v-menu bottom left>
         <template v-slot:activator="{ on }">
           <v-btn text v-on="on">
-            <span class="mr-2">{{ user.displayName }}</span>
+            <span class="mr-2">{{ user.name }}</span>
             <v-icon>mdi-menu-down</v-icon>
           </v-btn>
           <v-btn class="red mr-2" @click="$router.push('/profile')">

@@ -1,11 +1,27 @@
 <template>
   <div>
-    <v-card class="mx-auto" max-width="400">
-      <v-img class="white--text align-end mt-8" height="300px" :src="user.photoURL || defaultPicture">
-        <v-card-title>{{ user.displayName }}</v-card-title>
-      </v-img>
-      <v-card-subtitle>{{ user.email }}</v-card-subtitle>
-    </v-card>
+    <template>
+      <v-card class="mx-auto mt-8" max-width="434" tile>
+        <v-img height="100%" src="https://cdn.vuetifyjs.com/images/cards/server-room.jpg">
+          <v-row align="end" class="fill-height">
+            <v-col align-self="start" class="pa-0" cols="12">
+              <v-avatar class="profile" color="grey" size="164" tile>
+                <v-img src="https://lh3.googleusercontent.com/a-/AOh14GjKmbzMFHzXNYsUcv8j9NsVGmc8TfQYXrQjJSlQPg"></v-img>
+              </v-avatar>
+            </v-col>
+            <v-col class="py-0">
+              <v-list-item color="rgba(0, 0, 0, .4)" dark>
+                <v-list-item-content>
+                  <v-list-item-title class="title">{{ user.name }}</v-list-item-title>
+                  <v-list-item-subtitle>{{ user.email }}</v-list-item-subtitle>
+                  <v-list-item-subtitle>Web Developer</v-list-item-subtitle>
+                </v-list-item-content>
+              </v-list-item>
+            </v-col>
+          </v-row>
+        </v-img>
+      </v-card>
+    </template>
     <v-footer absolute class="font-weight-medium">
       <v-col class="text-center" cols="12">
         {{ new Date().getFullYear() }} — <strong>John De La Rosa</strong>
