@@ -1,5 +1,6 @@
 <template>
-  <v-app class="red text-center fill-height">
+  <v-app>    
+    <v-img :src="bgImage">
     <h1>A Coder</h1>
     <h4>
       A social network a place where you can share code and talk to one another and work together in projects and homework activites. As a community of coders, I feel we will connect them to solution that enable productivity, growth, and
@@ -38,5 +39,18 @@
         </v-container>
       </v-card-title>
     </v-card>
-  </v-app>
+    </v-img>
+      </v-app>
 </template>
+
+<script>
+import bgImage from '../components/bgImage1.jpg'
+export default {
+  name: 'Coder',
+  data() {
+    return {
+      bgImage
+    }
+  }
+}
+</script>

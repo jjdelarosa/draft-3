@@ -1,5 +1,6 @@
 <template>
-  <v-app class="green text-center fill-height">
+  <v-app>
+    <v-img :src="bgImage">
     <h1>A Student</h1>
     <h4>
       A person who is willing to learn how to code and use different languages. This person will come here and ask questions. When he/she has a question about their homework or projects. This will help the studnet more in their coding
@@ -31,5 +32,18 @@
         </v-container>
       </v-card-title>
     </v-card>
+    </v-img>
   </v-app>
 </template>
+
+<script>
+import bgImage from '../components/bgImage1.jpg'
+export default {
+  name: 'Coder',
+  data() {
+    return {
+      bgImage
+    }
+  }
+}
+</script>

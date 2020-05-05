@@ -1,6 +1,7 @@
 <template>
-  <v-app class="purple text-center fill-height">
-    <h1>A Student</h1>
+  <v-app>
+    <v-img :src="bgImage">
+    <h1>A Developer</h1>
     <h4>
       A developer is an individual who is responsible for creating or working on the development of a product or service. Most developers utilize one or more programming languages to develop their product or service. They may work alone or
       on a team, and may develop part of or all a product or service.
@@ -31,5 +32,18 @@
         </v-container>
       </v-card-title>
     </v-card>
+    </v-img>
   </v-app>
 </template>
+
+<script>
+import bgImage from '../components/bgImage1.jpg'
+export default {
+  name: 'Coder',
+  data() {
+    return {
+      bgImage
+    }
+  }
+}
+</script>
