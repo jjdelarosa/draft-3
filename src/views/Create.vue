@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <vue-editor v-model="content"></vue-editor>
-    <v-btn @click="saveContent" class="red mt-4">Save Content</v-btn>
+    <v-btn @click="handleSavingContent" class="red mt-4">Save Content</v-btn>
     <v-footer absolute class="font-weight-medium">
       <v-col class="text-center" cols="12">
         {{ new Date().getFullYear() }} — <strong>John De La Rosa</strong>
